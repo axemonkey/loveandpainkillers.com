@@ -1,0 +1,345 @@
+@import "fonts";
+
+$smol: 600px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #f99;
+	font-family: AtkinsonHyperlegible, sans-serif;
+	font-weight: 300;
+	background-color: #505;
+	font-size: 1.7rem;
+
+	@media (min-width: $smol) {
+		font-size: 2rem;
+		background-color: #303;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+
+		&.bg0 {
+			background-image: url("/images/bg/scott-webb-F5NcnzZK3_0-unsplash.jpg");
+		}
+
+		&.bg1 {
+			background-image: url("/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/raimond-klavins-n-7HTOiJPso-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg")
+					type("image/jpeg")
+			);
+		}
+
+		&.bg2 {
+			background-image: url("/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/s-migaj-VjIm5-UkvfY-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg") type("image/jpeg")
+			);
+		}
+
+		&.bg3 {
+			background-image: url("/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/jamie-street-OKwXxtFj3aE-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg")
+					type("image/jpeg")
+			);
+		}
+
+		&.bg4 {
+			background-image: url("/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/stormseeker-oXo6IvDnkqc-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg")
+					type("image/jpeg")
+			);
+		}
+
+		&.bg5 {
+			background-image: url("/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/daniel-tafjord-9p7nBsrcCt0-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg")
+					type("image/jpeg")
+			);
+		}
+
+		&.bg6 {
+			background-image: url("/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg");
+			background-image: image-set(
+				url("/images/bg/avif/trym-nilsen-eXV-LsWfCOo-unsplash.avif")
+					type("image/avif"),
+				url("/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg")
+					type("image/jpeg")
+			);
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 600;
+}
+
+main {
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	text-shadow: 3px 3px 3px #222;
+
+	@media (min-width: $smol) {
+		max-width: 800px;
+		margin: 20px auto 100vh;
+		border-radius: 8px;
+		box-shadow: 3px 3px 3px #222;
+		background-color: #505;
+		background-color: rgba(85 0 85 / 95%);
+		background-position: center 200px;
+		background-repeat: no-repeat;
+		background-image: url("/images/cover1pick-20.png");
+		background-image: image-set(
+			url("/images/cover1pick-20.avif") type("image/avif"),
+			url("/images/cover1pick-20.png") type("image/png")
+		);
+	}
+}
+
+section {
+	margin: 40px 0;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 5rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+ol,
+ul {
+	margin-left: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+a {
+	color: #faa;
+	font-weight: bold;
+}
+
+footer {
+	p {
+		text-align: left;
+	}
+
+	p.last {
+		font-size: medium;
+		margin-bottom: 5px;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.updates {
+		margin-top: 0;
+
+		li {
+			font-size: medium;
+			line-height: 1.5;
+		}
+	}
+
+	details {
+		margin-bottom: 2em;
+	}
+
+	summary {
+		font-size: medium;
+		cursor: pointer;
+		margin-bottom: 0.5em;
+		text-decoration: underline;
+	}
+}
+
+.trackItem {
+	width: 100%;
+	clear: both;
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	&.open {
+		background-color: #707;
+		background-color: rgba(119 30 119 / 40%);
+		padding-bottom: 0;
+		margin-bottom: 10px;
+	}
+}
+
+span.completion {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 3px;
+	background: rgba(130 30 130 / 40%);
+	z-index: 10;
+}
+
+.js-only {
+	display: none;
+}
+
+body.js {
+	.trackItem {
+		cursor: pointer;
+
+		&:hover {
+			background-color: #606;
+			background-color: rgba(102 30 102 / 40%);
+		}
+	}
+
+	span.completion {
+		display: block;
+	}
+
+	span.trackName {
+		text-decoration: underline;
+		padding-left: 5px;
+		display: inline-block;
+	}
+
+	.js-only {
+		display: block;
+	}
+}
+
+.trackItem.complete {
+	color: #fff;
+
+	span.completion {
+		background: rgba(130 200 130 / 75%);
+	}
+}
+
+.trackName {
+	display: inline-block;
+	position: relative;
+	z-index: 20;
+}
+
+.trackProgress {
+	clear: both;
+	float: right;
+	position: relative;
+	z-index: 20;
+}
+
+.trackItem table {
+	display: block;
+	clear: both;
+	padding: 10px;
+	background-color: #606;
+	background-color: rgba(102 30 102 / 40%);
+	cursor: default;
+	width: 100%;
+}
+
+.trackItem table th,
+.trackItem table td {
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.trackItem table th {
+	padding: 5px 20px 5px 5px;
+	padding-right: 20px;
+}
+
+.trackItem table td {
+	padding: 5px;
+	text-align: center;
+}
+
+.trackItem table td.status1 {
+	background-color: #44c;
+}
+
+.trackItem table td.status2 {
+	background-color: #4d4;
+	color: #111;
+}
+
+aside {
+	display: none;
+
+	@media (min-width: $smol) {
+		position: fixed;
+		display: block;
+		left: 0;
+		top: 0;
+
+		&.support {
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
+.imageCredit {
+	padding: 5px 8px;
+	margin: 0;
+	color: #fff;
+	background-color: rgba(0 0 0 / 75%);
+	font-size: small;
+	line-height: 1.75;
+
+	a {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+.overallPercentage {
+	font-weight: bold;
+	float: right;
+}
