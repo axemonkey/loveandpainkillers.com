@@ -13,7 +13,7 @@ if (env === 'development') {
 } else if (env === 'production') {
 	app
 		// .use(vhost('loveandpainkillers.com', loveandpainkillersApp))
-		.listen(80);
+		.listen(process.env.PORT); // heroku specifies port number
 }
 
 app.get('/', function (req, res) {
