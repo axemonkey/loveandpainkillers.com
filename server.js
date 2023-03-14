@@ -12,8 +12,8 @@ if (env === 'development') {
 		.listen(80);
 } else if (env === 'production') {
 	app
-		.use(vhost('loveandpainkillers.com', loveandpainkillersApp))
-		.listen(8080);
+		// .use(vhost('loveandpainkillers.com', loveandpainkillersApp))
+		.listen(80);
 }
 
 app.get('/', function (req, res) {
