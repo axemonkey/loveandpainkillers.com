@@ -3,77 +3,72 @@
 		{
 			"name": "Song #11",
 			"definite": true,
-			"statuses": "222322222213333000000"
+			"statuses": "2223222222233331100000"
 		},
 		{
 			"name": "Kalahari",
 			"definite": true,
-			"statuses": "222222222222323000000"
+			"statuses": "2222222222223231100000"
 		},
 		{
 			"name": "Mostly Harmless",
 			"definite": true,
-			"statuses": "222322222222233000000"
+			"statuses": "2223222222222331100000"
 		},
 		{
 			"name": "Gunslinger",
 			"definite": true,
-			"statuses": "222222222123321000000"
+			"statuses": "2222222222233211100000"
 		},
 		{
 			"name": "Wish I Were There",
 			"definite": true,
-			"statuses": "222222222222233000000"
+			"statuses": "2222222222222330000000"
 		},
 		{
 			"name": "The Case of the Six-Sided Man",
 			"definite": true,
-			"statuses": "222322222223321000000"
+			"statuses": "2223222222233211100000"
 		},
 		{
 			"name": "Return to Gamut Street",
 			"definite": true,
-			"statuses": "222322222222333000000"
+			"statuses": "2223222222223331100000"
 		},
 		{
 			"name": "Human Error",
 			"definite": true,
-			"statuses": "222322222223333000000"
+			"statuses": "2223222222233331100000"
 		},
 		{
 			"name": "Song S",
 			"definite": true,
-			"statuses": "222222222222233000000"
+			"statuses": "2222222222222331100000"
 		},
 		{
 			"name": "Perpetual Light",
 			"definite": true,
-			"statuses": "222223233323333003000"
+			"statuses": "2222232333233330003000"
 		},
 		{
 			"name": "Twice As Bright v2",
 			"definite": true,
-			"statuses": "222222222133333000000"
+			"statuses": "2222222221333331100000"
 		},
 		{
 			"name": "Brothers v2",
 			"definite": true,
-			"statuses": "222222222312331000000"
+			"statuses": "2222222223123311100000"
 		},
 		{
 			"name": "Until the End of the World v2",
 			"definite": true,
-			"statuses": "222222222223333000000"
+			"statuses": "2222222222233331100000"
 		},
 		{
 			"name": "The Wheel",
-			"definite": false,
-			"statuses": "222233033343333303300"
-		},
-		{
-			"name": "Last Summer",
-			"definite": false,
-			"statuses": "222233333330333303300"
+			"definite": true,
+			"statuses": "2222332333333333303300"
 		}
 	]
 }
