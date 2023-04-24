@@ -1,19 +1,9 @@
 {
 	"tracks": [
 		{
-			"name": "Song #11",
+			"name": "Brothers v2",
 			"definite": true,
-			"statuses": "2223222222233331100000"
-		},
-		{
-			"name": "Kalahari",
-			"definite": true,
-			"statuses": "2222222222223231100000"
-		},
-		{
-			"name": "Mostly Harmless",
-			"definite": true,
-			"statuses": "2223222222222331100000"
+			"statuses": "2222222223223311111100"
 		},
 		{
 			"name": "Gunslinger",
@@ -21,7 +11,37 @@
 			"statuses": "2222222222233211100000"
 		},
 		{
-			"name": "Wish I Were There",
+			"name": "Human Error",
+			"definite": true,
+			"statuses": "2223222222233331000000"
+		},
+		{
+			"name": "Kalahari",
+			"definite": true,
+			"statuses": "2222222222223231000000"
+		},
+		{
+			"name": "Mostly Harmless",
+			"definite": true,
+			"statuses": "2223222222222331000000"
+		},
+		{
+			"name": "Perpetual Light",
+			"definite": true,
+			"statuses": "2222232333233330303000"
+		},
+		{
+			"name": "Return to Gamut Street",
+			"definite": true,
+			"statuses": "2223222222223331000000"
+		},
+		{
+			"name": "Song #11",
+			"definite": true,
+			"statuses": "2223222222233331000000"
+		},
+		{
+			"name": "Song S",
 			"definite": true,
 			"statuses": "2222222222222331100000"
 		},
@@ -31,34 +51,14 @@
 			"statuses": "2223222222233211100000"
 		},
 		{
-			"name": "Return to Gamut Street",
+			"name": "The Wheel",
 			"definite": true,
-			"statuses": "2223222222223331100000"
-		},
-		{
-			"name": "Human Error",
-			"definite": true,
-			"statuses": "2223222222233331100000"
-		},
-		{
-			"name": "Song S",
-			"definite": true,
-			"statuses": "2222222222222331100000"
-		},
-		{
-			"name": "Perpetual Light",
-			"definite": true,
-			"statuses": "2222232333233330303000"
+			"statuses": "2222332333333333303300"
 		},
 		{
 			"name": "Twice As Bright v2",
 			"definite": true,
-			"statuses": "2222222221333331100000"
-		},
-		{
-			"name": "Brothers v2",
-			"definite": true,
-			"statuses": "2222222223223311111000"
+			"statuses": "2222222221333331000000"
 		},
 		{
 			"name": "Until the End of the World v2",
@@ -66,9 +66,9 @@
 			"statuses": "2222222222233331100000"
 		},
 		{
-			"name": "The Wheel",
+			"name": "Wish I Were There",
 			"definite": true,
-			"statuses": "2222332333333333303300"
+			"statuses": "2222222222222331110000"
 		}
 	]
 }
