@@ -8,12 +8,12 @@
 		{
 			"name": "Gunslinger",
 			"definite": true,
-			"statuses": "2222222222233212210000"
+			"statuses": "2222222222233212220000"
 		},
 		{
 			"name": "Human Error",
 			"definite": true,
-			"statuses": "2223222222233332200000"
+			"statuses": "2223222222233332220000"
 		},
 		{
 			"name": "Kalahari",
@@ -38,7 +38,7 @@
 		{
 			"name": "Song #11",
 			"definite": true,
-			"statuses": "2223222222233332200000"
+			"statuses": "2223222222233332220000"
 		},
 		{
 			"name": "Song S",
@@ -48,7 +48,7 @@
 		{
 			"name": "The Case of the Six-Sided Man",
 			"definite": true,
-			"statuses": "2223222222233212200000"
+			"statuses": "2223222222233212220000"
 		},
 		{
 			"name": "The Wheel",
