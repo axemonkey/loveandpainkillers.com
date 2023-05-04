@@ -343,3 +343,19 @@ aside {
 	font-weight: bold;
 	float: right;
 }
+
+.notice {
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background: rgba(0 0 0 / 10%);
+	box-shadow: 0 0 5px 2px rgba(255 255 255 / 100%);
+
+	h2 {
+		margin-bottom: 0.75em;
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
