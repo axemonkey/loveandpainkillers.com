@@ -5,10 +5,6 @@
     "node": true,
     "mocha": true
   },
-  "globals": {
-    "MicroModal": "readonly",
-    "moment": "readonly"
-  },
   "ignorePatterns": ["**/vendor/**/*.js", "**/public/**/*.js"],
   "parserOptions": {
     "ecmaVersion": 2020

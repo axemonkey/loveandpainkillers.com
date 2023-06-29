@@ -27,64 +27,65 @@ body {
 		background-attachment: fixed;
 
 		&.bg0 {
-			background-image: url("/images/bg/scott-webb-F5NcnzZK3_0-unsplash.jpg");
+			background-image: url("/public/images/bg/scott-webb-F5NcnzZK3_0-unsplash.jpg");
 		}
 
 		&.bg1 {
-			background-image: url("/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg");
+			background-image: url("/public/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/raimond-klavins-n-7HTOiJPso-unsplash.avif")
+				url("/public/images/bg/avif/raimond-klavins-n-7HTOiJPso-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg")
+				url("/public/images/bg/raimond-klavins-n-7HTOiJPso-unsplash.jpg")
 					type("image/jpeg")
 			);
 		}
 
 		&.bg2 {
-			background-image: url("/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg");
+			background-image: url("/public/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/s-migaj-VjIm5-UkvfY-unsplash.avif")
+				url("/public/images/bg/avif/s-migaj-VjIm5-UkvfY-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg") type("image/jpeg")
+				url("/public/images/bg/s-migaj-VjIm5-UkvfY-unsplash.jpg")
+					type("image/jpeg")
 			);
 		}
 
 		&.bg3 {
-			background-image: url("/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg");
+			background-image: url("/public/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/jamie-street-OKwXxtFj3aE-unsplash.avif")
+				url("/public/images/bg/avif/jamie-street-OKwXxtFj3aE-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg")
+				url("/public/images/bg/jamie-street-OKwXxtFj3aE-unsplash.jpg")
 					type("image/jpeg")
 			);
 		}
 
 		&.bg4 {
-			background-image: url("/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg");
+			background-image: url("/public/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/stormseeker-oXo6IvDnkqc-unsplash.avif")
+				url("/public/images/bg/avif/stormseeker-oXo6IvDnkqc-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg")
+				url("/public/images/bg/stormseeker-oXo6IvDnkqc-unsplash.jpg")
 					type("image/jpeg")
 			);
 		}
 
 		&.bg5 {
-			background-image: url("/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg");
+			background-image: url("/public/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/daniel-tafjord-9p7nBsrcCt0-unsplash.avif")
+				url("/public/images/bg/avif/daniel-tafjord-9p7nBsrcCt0-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg")
+				url("/public/images/bg/daniel-tafjord-9p7nBsrcCt0-unsplash.jpg")
 					type("image/jpeg")
 			);
 		}
 
 		&.bg6 {
-			background-image: url("/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg");
+			background-image: url("/public/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg");
 			background-image: image-set(
-				url("/images/bg/avif/trym-nilsen-eXV-LsWfCOo-unsplash.avif")
+				url("/public/images/bg/avif/trym-nilsen-eXV-LsWfCOo-unsplash.avif")
 					type("image/avif"),
-				url("/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg")
+				url("/public/images/bg/trym-nilsen-eXV-LsWfCOo-unsplash.jpg")
 					type("image/jpeg")
 			);
 		}
@@ -116,10 +117,10 @@ main {
 		background-color: rgba(85 0 85 / 95%);
 		background-position: center 200px;
 		background-repeat: no-repeat;
-		background-image: url("/images/cover1pick-20.png");
+		background-image: url("/public/images/cover1pick-20.png");
 		background-image: image-set(
-			url("/images/cover1pick-20.avif") type("image/avif"),
-			url("/images/cover1pick-20.png") type("image/png")
+			url("/public/images/cover1pick-20.avif") type("image/avif"),
+			url("/public/images/cover1pick-20.png") type("image/png")
 		);
 	}
 }
@@ -331,6 +332,7 @@ aside {
 	background-color: rgba(0 0 0 / 75%);
 	font-size: small;
 	line-height: 1.75;
+	display: none;
 
 	a {
 		color: #fff;
@@ -358,4 +360,8 @@ aside {
 	*:last-child {
 		margin-bottom: 0;
 	}
+}
+
+body.js .imageCredit {
+	display: block;
 }
