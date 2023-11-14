@@ -1,5 +1,4 @@
 import getData from './get-data.js';
-import setupBackground from './background.js';
 
 const loadStatus = {
 	steps: false,
@@ -67,7 +66,6 @@ const showBackground = trackEl => {
 
 const setupPage = () => {
 	document.body.classList.add('js');
-	setupBackground();
 	const tracks = document.querySelectorAll('.trackItem');
 
 	for (const track of tracks) {
