@@ -62,3 +62,12 @@
 	font-weight: bold;
 	font-style: italic;
 }
+
+// Oswald
+@font-face {
+	font-family: Oswald;
+	src: url("/public/fonts/Oswald-Light.woff2") format("woff2"),
+		url("/public/fonts/Oswald-Light.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
