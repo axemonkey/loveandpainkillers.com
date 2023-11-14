@@ -40,13 +40,13 @@ title: Love & Painkillers
 			{% if loop.first %}
 				<p class="last">Latest update:</p>
 				<ul class="updates">
-					<li><strong>{{update.date}}</strong>: {{update.text}}</li>
+					<li><strong>{{update.date}}</strong>: {{update.text | safe}}</li>
 				</ul>
 				<details>
 					<summary>Previous updates:</summary>
 					<ul class="updates">
 			{% else %}
-				<li><strong>{{update.date}}</strong>: {{update.text}}</li>
+				<li><strong>{{update.date}}</strong>: {{update.text | safe}}</li>
 			{% endif %}
 		{% endfor %}
 			</ul>
