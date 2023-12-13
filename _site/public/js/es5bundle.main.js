@@ -9,7 +9,7 @@
 	      callback(xhttp.responseText);
 	    }
 	  };
-	  xhttp.open('GET', "/public/data/".concat(filename, ".json?ms=").concat(ms), false);
+	  xhttp.open('GET', `/public/data/${filename}.json?ms=${ms}`, false);
 	  xhttp.send();
 	};
 
@@ -34,8 +34,8 @@
 	  for (const status of statuses) {
 	    if (status <= 2) {
 	      html += '<tr>';
-	      html += "<th><span>".concat(loadData.steps[index], "</span></th>");
-	      html += "<td class=\"status".concat(status, "\">").concat(loadData.states[status].text, "</td>");
+	      html += `<th><span>${loadData.steps[index]}</span></th>`;
+	      html += `<td class="status${status}">${loadData.states[status].text}</td>`;
 	      html += '</tr>';
 	    }
 	    index++;
@@ -65,8 +65,8 @@
 	};
 	const showBackground = trackEl => {
 	  const completionSpan = trackEl.querySelector('.completion');
-	  completionSpan.style.height = "".concat(trackEl.offsetHeight - 6, "px");
-	  completionSpan.style.width = "".concat(trackEl.dataset.completion, "%");
+	  completionSpan.style.height = `${trackEl.offsetHeight - 6}px`;
+	  completionSpan.style.width = `${trackEl.dataset.completion}%`;
 	};
 	const setupPage = () => {
 	  document.body.classList.add('js');
