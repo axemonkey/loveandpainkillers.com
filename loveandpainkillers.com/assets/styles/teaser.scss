@@ -67,8 +67,7 @@ h1 {
 	font-weight: normal;
 	font-style: normal;
 	text-transform: uppercase;
-	font-size: 3rem;
-	font-size: 8vw;
+	font-size: clamp(4rem, -1.4545rem + 23.2727vw, 16rem);
 	letter-spacing: 10px;
 	text-shadow: 3px 3px 5px #5cdbff;
 	text-align: center;
