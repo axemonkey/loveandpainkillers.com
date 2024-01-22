@@ -62,6 +62,41 @@ img {
 
 section {
 	margin: 40px 0;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(92 215 255 / 50%);
+}
+
+section > *:last-child {
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+footer {
+	border-top: 1px solid rgba(92 215 255 / 50%);
+
+	p {
+		text-align: left;
+		margin: 0;
+	}
+
+	section {
+		border: none;
+		padding: 20px 0;
+		margin-bottom: 0;
+		width: 100%;
+
+		@media (min-width: $smol) {
+			width: 800px;
+			margin: auto;
+		}
+	}
+}
+
+main > section:last-child {
+	border-bottom: 0;
 }
 
 h1 {
@@ -80,10 +115,6 @@ h2 {
 	font-family: "Playfair Display", serif;
 	font-weight: normal;
 	font-style: italic;
-}
-
-p {
-	margin-bottom: 1em;
 }
 
 ol,
@@ -120,13 +151,6 @@ a.buy-link:hover {
 	color: #fff;
 	background-color: color.adjust(#5cdbff, $lightness: -25%);
 	text-shadow: 0 0 1px #000;
-}
-
-footer {
-	p {
-		text-align: left;
-		margin: 0;
-	}
 }
 
 .js-only {
