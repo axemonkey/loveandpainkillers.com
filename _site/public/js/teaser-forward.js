@@ -1,5 +1,13 @@
+const DEBUG = false;
+
+const clog = msg => {
+	if (DEBUG) {
+		console.log(msg);
+	}
+};
+
 const init = () => {
-	console.log('teaser load');
+	clog('teaser load');
 
 	const launch = {
 		year: 2024,
@@ -14,16 +22,15 @@ const init = () => {
 
 	const now = new Date();
 	const launchDate = new Date();
-	launchDate.setFullYear(launch.year);
-	launchDate.setMonth(launch.month);
-	launchDate.setDate(launch.date);
-	launchDate.setHours(0);
-	launchDate.setMinutes(0);
-	launchDate.setSeconds(0);
-	launchDate.setMilliseconds(0);
+	launchDate.setFullYear(launch.year, launch.month, launch.date);
+	launchDate.setHours(0, 0, 0, 0);
 
 	const timeLeftUntilLaunch = launchDate.getTime() - now.getTime();
 	let msLeftUntilLaunch = timeLeftUntilLaunch;
+
+	clog(`timeLeftUntilLaunch: ${timeLeftUntilLaunch}`);
+	clog(`now: ${now}`);
+	clog(`launchDate: ${launchDate}`);
 
 	if (msLeftUntilLaunch > 0) {
 		const wholeDaysLeft = Math.floor(msLeftUntilLaunch / dayInMs);
@@ -34,10 +41,10 @@ const init = () => {
 		msLeftUntilLaunch -= (wholeMinutesLeft * minuteInMs);
 		const wholeSecondsLeft = Math.floor(msLeftUntilLaunch / secondInMs);
 
-		console.log(`wholeDaysLeft: ${wholeDaysLeft}`);
-		console.log(`wholeHoursLeft: ${wholeHoursLeft}`);
-		console.log(`wholeMinutesLeft: ${wholeMinutesLeft}`);
-		console.log(`wholeSecondsLeft: ${wholeSecondsLeft}`);
+		clog(`wholeDaysLeft: ${wholeDaysLeft}`);
+		clog(`wholeHoursLeft: ${wholeHoursLeft}`);
+		clog(`wholeMinutesLeft: ${wholeMinutesLeft}`);
+		clog(`wholeSecondsLeft: ${wholeSecondsLeft}`);
 
 		const timeStr = `${wholeDaysLeft}d ${wholeHoursLeft}h ${wholeMinutesLeft}m`;
 

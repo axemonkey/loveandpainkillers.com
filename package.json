@@ -13,11 +13,11 @@
     "lint:styles": "npm-run-all prettify stylelint",
     "prettify": "prettier './loveandpainkillers.com/assets/styles/**/*.scss' --write",
     "stylelint": "stylelint './loveandpainkillers.com/assets/styles/**/*.scss' --customSyntax postcss-scss",
-    "build:copyassets": "node tooling/copy-assets.js loveandpainkillers.com data,fonts",
+    "build:copyassets": "node tooling/copy-assets.js loveandpainkillers.com data,fonts,files",
     "build:images": "node tooling/process-images.js loveandpainkillers.com",
     "build:styles": "node tooling/build-css.js loveandpainkillers.com",
     "build:js": "node tooling/build-js.js loveandpainkillers.com",
-    "watch:assets": "onchange './loveandpainkillers.com/assets/fonts' './loveandpainkillers.com/assets/data' -- npm run build:copyassets",
+    "watch:assets": "onchange './loveandpainkillers.com/assets/fonts' './loveandpainkillers.com/assets/data' './loveandpainkillers.com/assets/files' -- npm run build:copyassets",
     "watch:images": "onchange './loveandpainkillers.com/assets/images/**/*' -- npm run build:images",
     "watch:styles": "onchange './loveandpainkillers.com/assets/styles/**/*.scss' -- npm-run-all lint:styles build:styles",
     "watch:js": "onchange './loveandpainkillers.com/assets/js/**/*.js' -- npm-run-all lint:js build:js"
