@@ -9,18 +9,15 @@
     "lint": "npm-run-all lint:* lint-tooling",
     "dev": "npm-run-all lint build watch",
     "watch": "npm-run-all --parallel watch:*",
-    "lint:js": "npx eslint loveandpainkillers.com",
     "lint:styles": "npm-run-all prettify stylelint",
     "prettify": "prettier './loveandpainkillers.com/assets/styles/**/*.scss' --write",
     "stylelint": "stylelint './loveandpainkillers.com/assets/styles/**/*.scss' --customSyntax postcss-scss",
-    "build:copyassets": "node tooling/copy-assets.js loveandpainkillers.com data,fonts,files",
+    "build:copyassets": "node tooling/copy-assets.js loveandpainkillers.com fonts,files",
     "build:images": "node tooling/process-images.js loveandpainkillers.com",
     "build:styles": "node tooling/build-css.js loveandpainkillers.com",
-    "build:js": "node tooling/build-js.js loveandpainkillers.com",
     "watch:assets": "onchange './loveandpainkillers.com/assets/fonts' './loveandpainkillers.com/assets/data' './loveandpainkillers.com/assets/files' -- npm run build:copyassets",
     "watch:images": "onchange './loveandpainkillers.com/assets/images/**/*' -- npm run build:images",
-    "watch:styles": "onchange './loveandpainkillers.com/assets/styles/**/*.scss' -- npm-run-all lint:styles build:styles",
-    "watch:js": "onchange './loveandpainkillers.com/assets/js/**/*.js' -- npm-run-all lint:js build:js"
+    "watch:styles": "onchange './loveandpainkillers.com/assets/styles/**/*.scss' -- npm-run-all lint:styles build:styles"
   },
   "author": "Clive Murray <clive+murray@clivemurray.com>",
   "license": "UNLICENSED",
@@ -32,7 +29,7 @@
     "node": "22"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@babel/core": "7.20.12",
     "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/plugin-transform-object-assign": "7.18.6",
