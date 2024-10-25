@@ -7,7 +7,7 @@
     "lint-tooling": "npx eslint '*.js' 'tooling/**/*.js'",
     "build": "node tooling/clean.js loveandpainkillers.com && npm-run-all build:*",
     "lint": "npm-run-all lint:* lint-tooling",
-    "dev": "npm-run-all lint build watch",
+    "dev": "npm-run-all lint build && npm-run-all --parallel start watch",
     "watch": "npm-run-all --parallel watch:*",
     "lint:styles": "npm-run-all prettify stylelint",
     "prettify": "prettier './loveandpainkillers.com/assets/styles/**/*.scss' --write",
