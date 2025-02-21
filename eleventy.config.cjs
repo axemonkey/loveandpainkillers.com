@@ -8,13 +8,13 @@ const calculateTrackCompletion = function(trackStatuses) {
 };
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy('loveandpainkillers.com/public');
-	eleventyConfig.addPassthroughCopy({ 'loveandpainkillers.com/robots.txt': '/robots.txt' });
+	eleventyConfig.addPassthroughCopy('src/public');
+	eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setServerOptions({
 		// liveReload: false,
 		watch: [
-			'loveandpainkillers.com/public/**/*',
+			'src/public/**/*',
 		],
 		showVersion: true,
 	});
