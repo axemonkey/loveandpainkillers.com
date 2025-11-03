@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../assets/js/main.js"],
+  "sourcesContent": ["const init = () => {\n\tconsole.log(\"JS loaded\");\n};\n\nwindow.addEventListener(\"load\", init);\n"],
+  "mappings": "MAAA,IAAMA,EAAO,IAAM,CAClB,QAAQ,IAAI,WAAW,CACxB,EAEA,OAAO,iBAAiB,OAAQA,CAAI",
+  "names": ["init"]
+}
