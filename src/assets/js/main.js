@@ -1,5 +1,5 @@
 const init = () => {
-	console.log("JS loaded");
+	console.log('JS loaded');
 };
 
-window.addEventListener("load", init);
+window.addEventListener('load', init);
