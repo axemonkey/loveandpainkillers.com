@@ -3,7 +3,7 @@ const calculateTrackCompletion = function (trackStatuses) {
 	const startedSteps = (trackStatuses.match(/1/g) || []).length;
 	const completedSteps = (trackStatuses.match(/2/g) || []).length;
 	const progress = Math.ceil(
-		((startedSteps / 2 + completedSteps) / relevantSteps) * 100
+		((startedSteps / 2 + completedSteps) / relevantSteps) * 100,
 	);
 
 	return progress;
@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
 		"getTrackCompletion",
 		function (trackStatuses) {
 			return calculateTrackCompletion(trackStatuses);
-		}
+		},
 	);
 
 	eleventyConfig.addNunjucksGlobal("getOverallCompletion", function (tracks) {
